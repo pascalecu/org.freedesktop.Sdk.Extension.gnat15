@@ -50,13 +50,13 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnatcov-26.2-1/gnatcov-aarch64-linux-26.2-1.tar.gz
-        sha256: b465e28dd75ffba01737a923975ebc3d85468826492f1c62783d4c81c5fe36db
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-26.0.0-1/gprbuild-aarch64-linux-26.0.0-1.tar.gz
+        sha256: 9a2e6cfb9c4add85c7c411e95533c46728aae7de19a9a0b056abf53bd9795b0d
 
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-25.0.0-1/gprbuild-x86_64-linux-25.0.0-1.tar.gz
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-26.0.0-1/gprbuild-x86_64-linux-26.0.0-1.tar.gz
         sha256: 9a2e6cfb9c4add85c7c411e95533c46728aae7de19a9a0b056abf53bd9795b0d
 
   - name: alire
