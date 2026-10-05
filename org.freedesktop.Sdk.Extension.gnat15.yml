@@ -12,7 +12,7 @@ modules:
   - name: gnat
     buildsystem: simple
     build-commands:
-      - cp -R * "${FLATPAK_DEST}"
+      - cp -a . "${FLATPAK_DEST}/"
     sources:
       - only-arches:
           - aarch64
@@ -22,19 +22,20 @@ modules:
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.1.0-2/gnat-x86_64-linux-15.1.0-2.tar.gz
-        sha256: f0e902c010158a79d04c06d3aee5b5999875d9b4c66c876009deffcaa3639df3
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.2.0-1/gnat-x86_64-linux-15.2.0-1.tar.gz
+        sha256: 4640d4b369833947ab1a156753f4db0ecd44b0f14410b5b2bc2a14df496604bb
 
   - name: gnatprove
     buildsystem: simple
     build-commands:
-      - cp -R * "${FLATPAK_DEST}"
+      - cp -a . "${FLATPAK_DEST}/"
     sources:
       - only-arches:
           - aarch64
         type: archive
         url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnatprove-15.1.0-1/gnatprove-aarch64-linux-15.1.0-1.tar.gz
-        sha256: a4a9bb7cb0d6a80c422e9e490aa337d8b1ae7b68079be19724761ce3404a5c1a
+        sha256: 5131b7ccf04bb2c4ed12bd3e65ad92889f48ff1fabab257c6fa8407f067db7de
+
       - only-arches:
           - x86_64
         type: archive
@@ -44,13 +45,14 @@ modules:
   - name: gprbuild
     buildsystem: simple
     build-commands:
-      - cp -R * "${FLATPAK_DEST}"
+      - cp -a . "${FLATPAK_DEST}/"
     sources:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-25.0.0-1/gprbuild-aarch64-linux-25.0.0-1.tar.gz
-        sha256: 5e58c08eb6d0bd15f98654777a53fbb1e4329e38fec7074de08429989850562b
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnatcov-26.2-1/gnatcov-aarch64-linux-26.2-1.tar.gz
+        sha256: b465e28dd75ffba01737a923975ebc3d85468826492f1c62783d4c81c5fe36db
+
       - only-arches:
           - x86_64
         type: archive
@@ -65,13 +67,14 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-aarch64-linux.zip
-        sha256: 5d4d711e2ae347532c931212b9aeca9eba1d9ab87d6d819c262bb2c5d423d363
+        url: https://github.com/alire-project/alire/releases/download/v2.1.1/alr-2.1.1-bin-aarch64-linux.zip
+        sha256: d76c93ad3dc631826144e10bdabc6b3bf98783805bebfd5e4a0e852dd524d812
+
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-x86_64-linux.zip
-        sha256: e3b32cb0afe981b23d1a68da77452cf81ee1d82de8ebaf01c5e233be8b463fbe
+        url: https://github.com/alire-project/alire/releases/download/v2.1.1/alr-2.1.1-bin-x86_64-linux.zip
+        sha256: 09c66bcd8c35dd4b97b72c3d9b76e44caa6964a2db35aba069f396f00f1f64c7
 
   - name: enable-sh
     buildsystem: simple
