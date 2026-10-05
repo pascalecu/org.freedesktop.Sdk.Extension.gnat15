@@ -17,12 +17,12 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.2.0-1/gnat-aarch64-linux-15.2.0-1.tar.gz
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.3.0-1/gnat-aarch64-linux-15.3.0-1.tar.gz
         sha256: 058fc2ee214952dc14c0ae7b0fb932e0afcd09854822ce806e3436bfb9547cbb
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.2.0-1/gnat-x86_64-linux-15.2.0-1.tar.gz
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.3.0-1/gnat-x86_64-linux-15.3.0-1.tar.gz
         sha256: 4640d4b369833947ab1a156753f4db0ecd44b0f14410b5b2bc2a14df496604bb
 
   - name: gnatprove
